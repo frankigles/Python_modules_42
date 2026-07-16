@@ -29,7 +29,7 @@ class Plant:
             self.age_old += 1
             print(f"=== Day {i} ===")
             self.grow()
-        print(f"Growth this week: {self.height - initial_height}")
+        print(f"Growth this week: {self.height - initial_height}cm")
 
 
 if __name__ == "__main__":

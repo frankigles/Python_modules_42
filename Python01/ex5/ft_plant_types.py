@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 class Plant:
     def __init__(self, name: str, height: float, age_old: int) -> None:
         self._name = name
@@ -119,7 +121,7 @@ class Vegetable(Plant):
     def grow(self, days_grow):
         print(f"[make tomato grow and age for {days_grow} days]")
         self.age(days_grow)
-        self._height += (4.3 * days_grow)
+        self._height += (2.10 * days_grow)
         self._nutritional_value += days_grow
         self.show()
 
@@ -127,7 +129,7 @@ class Vegetable(Plant):
 def main() -> None:
     print("=== Garden Plant Types ===")
     print("=== Flower")
-    flor = Flower("Rosa", 15, 6, "gris")
+    flor = Flower("Rose", 15, 10, "red")
     flor.show()
     flor.bloom()
     flor.show()
@@ -138,9 +140,9 @@ def main() -> None:
     oak.produce_shade()
     print("\n")
     print("=== Vegetable")
-    vegetal = Vegetable("Tomato", 20, 52, "April")
+    vegetal = Vegetable("Tomato", 5, 10, "April")
     vegetal.show()
-    vegetal.grow(10)
+    vegetal.grow(20)
 
 
 if __name__ == "__main__":
